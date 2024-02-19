@@ -22,7 +22,7 @@ function postMsg(msg) {
   let newline = document.createElement('li');
   afrom = msg.from.slice(0,5)+'..'+msg.from.slice(-5);
   atooo = msg.to.slice(0,5)+'..'+msg.to.slice(-5);
-  newline.innerHTML = afrom +' sent '+ msg.amount +' to '+ atooo;
+  newline.innerHTML = afrom +' → '+ msg.amount +' → '+ atooo;
   target.appendChild(newline);
 };
 
